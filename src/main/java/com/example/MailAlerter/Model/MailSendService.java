@@ -14,7 +14,7 @@ public class MailSendService {
     public void sendMail(String receiver) {
         SimpleMailMessage sMessage = new SimpleMailMessage();
         sMessage.setTo(receiver);
-        sMessage.setText("Hola soy spam");
+        sMessage.setText("Hola, ¡Soy una alerta!");
         javaMailSender.send(sMessage);
     }    
     
